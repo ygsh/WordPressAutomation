@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite FireFox">
+  <test name="Test">
+  <parameter name ="browser" value = "firefox"/>
+  <parameter name="server_url" value="http://localhost/wp-login.php"/>
+  <parameter name ="username" value = "yogi"/>
+  <parameter name="password" value="welcome"/>
+  <parameter name ="invalid_username" value = "yogi1"/>
+  <parameter name="invalid_password" value="welcome"/>
+    <classes>
+      <class name="wordpress.automation.client.AppLoginTest" />
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

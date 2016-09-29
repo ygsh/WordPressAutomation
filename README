@@ -1,0 +1,15 @@
+- To test Appium, update the "siteurl" in wp_option table in wordpress table to an IP so you can access 
+it over the local wifi. For example, I changed the siteurl to "http://192.168.1.8".
+
+- On the app, the url is "hosted url" and written as http://192.168.1.8/xmlrpc.php
+
+- Ensure you always remove the URL and re-add it whenever you do this change.
+
+- The update above can be done from UI as well by going to settings and changing wordpress url.
+
+- Once this is done, server tests cannot be done as server is running on local machine and it causes
+from within this machine you obviously cannot access from outside IP.
+
+- To test server, simply change this url back to locahost.
+
+- Actually if the URL update is done from the backend, both the server and the app works locally.

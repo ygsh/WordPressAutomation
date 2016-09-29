@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TESTNGSUITE">
+<parameter name="a" value="2" />
+<parameter name="b" value="3" />
+    <test verbose="2" name=" TEST2">
+    <classes>
+      <class name="Wordpress.Automation.server.Maths">
+      <methods>
+      <parameter name="a" value="50" />
+      <parameter name="b" value="90" />
+      <include name="addNumbersFromXMLMethod" />
+      </methods>
+      </class>
+    </classes>
+  </test>
+</suite> 

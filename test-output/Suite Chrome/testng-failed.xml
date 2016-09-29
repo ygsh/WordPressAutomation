@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite Chrome]">
+  <parameter name="password" value="welcome"/>
+  <parameter name="invalid_username" value="yogi1"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="invalid_password" value="welcome"/>
+  <parameter name="server_url" value="http://localhost/wp-login.php"/>
+  <parameter name="username" value="yogi"/>
+  <test name="Test">
+    <parameter name="password" value="welcome"/>
+    <parameter name="invalid_username" value="yogi1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="invalid_password" value="welcome"/>
+    <parameter name="server_url" value="http://localhost/wp-login.php"/>
+    <parameter name="username" value="yogi"/>
+    <classes>
+      <class name="Wordpress.Automation.server.AllPostsTest">
+        <methods>
+          <include name="getAllPostDetails"/>
+        </methods>
+      </class> <!-- Wordpress.Automation.server.AllPostsTest -->
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="password" value="welcome"/>
+    <parameter name="invalid_username" value="yogi1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="invalid_password" value="welcome"/>
+    <parameter name="server_url" value="http://localhost/wp-login.php"/>
+    <parameter name="username" value="yogi"/>
+    <classes>
+      <class name="Wordpress.Automation.server.AllPostsTest">
+        <methods>
+          <include name="loadHomePage"/>
+          <include name="appiumStartServer"/>
+          <include name="getAllPostDetails" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Wordpress.Automation.server.AllPostsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite Chrome] -->

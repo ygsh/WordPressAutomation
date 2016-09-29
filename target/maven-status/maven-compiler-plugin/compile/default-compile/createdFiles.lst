@@ -1,0 +1,6 @@
+com/yogi/wordpressServer/Pages/NewPostPage.class
+com/yogi/wordpressServer/Pages/LoginPage.class
+com/yogi/wordpressClient/pages/LoginPage.class
+com/yogi/wordpressServer/Pages/HomePage.class
+com/yogi/wordpressServer/Pages/AllPostsPage.class
+com/yogi/wordpressServer/setup/TestSetup.class
